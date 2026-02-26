@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "WebSearch",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__query-docs",
+      "Bash(rustc:*)",
+      "Bash(winget install:*)",
+      "Bash(cmd.exe /c:*)",
+      "Bash(powershell.exe -Command \"winget install Rustlang.Rustup --accept-source-agreements --accept-package-agreements\")",
+      "Bash(powershell.exe -Command \"npm create tauri-app@latest . -- --template react-ts --manager npm -y\")",
+      "Bash(powershell.exe -Command \"npm create tauri-app@latest temp_project -- --template react-ts --manager npm -y\")",
+      "Bash(powershell.exe -Command \"npm install\")",
+      "Bash(powershell.exe -Command \"npm install pixi.js @pixi/react zustand\")",
+      "Bash(powershell.exe -Command \"npx tsc --noEmit 2>&1\")",
+      "Bash(cat:*)",
+      "Bash(npm run build:*)",
+      "WebFetch(domain:docs.claude.com)",
+      "WebFetch(domain:claude.com)",
+      "Bash(npx tsc:*)",
+      "Bash(identify:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\Conno\\\\OneDrive\\\\Desktop\\\\code\\\\vibe_code_villager\\\\src\\\\components\\\\tilemap\"\" 2>/dev/null || echo \"Directory not found \")"
+    ]
+  }
+}

@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+  image-rendering: pixelated;
+}
+
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Dialog Overlay */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.dialog {
+  background: #1a1a2e;
+  border: 2px solid #c9a227;
+  border-radius: 8px;
+  padding: 24px;
+  min-width: 400px;
+  max-width: 90vw;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dialog h2 {
+  margin-bottom: 20px;
+  color: #c9a227;
+  font-size: 1.5rem;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #0f0f1a;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #c9a227;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}
+
+.actions button:active {
+  transform: scale(0.98);
+}
+
+.actions button[type="submit"] {
+  background: #c9a227;
+  color: #000;
+}
+
+.actions button[type="submit"]:disabled {
+  background: #666;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.actions button[type="button"] {
+  background: #444;
+  color: #fff;
+}
+
+/* Info Panel */
+.info-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 320px;
+  height: 100vh;
+  background: #1a1a2e;
+  border-left: 2px solid #c9a227;
+  padding: 20px;
+  color: #fff;
+  z-index: 50;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #444;
+}
+
+.panel-header h3 {
+  color: #c9a227;
+  font-size: 1.25rem;
+}
+
+.panel-header button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.panel-header button:hover {
+  color: #fff;
+}
+
+.panel-content h4 {
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.panel-content .instructions {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.agent-color {
+  margin-bottom: 16px;
+}
+
+.color-swatch {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #444;
+}
+
+.meta {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #333;
+  color: #666;
+}
+
+/* Control Panel */
+.control-panel {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #1a1a2e;
+  border: 2px solid #c9a227;
+  border-radius: 8px;
+  padding: 16px 24px;
+  z-index: 50;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.control-panel .state-indicator {
+  color: #c9a227;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.control-panel .button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.control-panel button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #c9a227;
+  color: #000;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.control-panel button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.control-panel button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.control-panel button:disabled {
+  background: #444;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* Setup Panel */
+.setup-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #1a1a2e;
+  border: 2px solid #c9a227;
+  border-radius: 8px;
+  padding: 16px 20px;
+  z-index: 50;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  max-width: 320px;
+}
+
+.setup-panel h3 {
+  color: #c9a227;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.setup-panel p {
+  color: #ccc;
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.setup-panel .setup-message {
+  color: #4ade80;
+  font-size: 0.75rem;
+  background: rgba(74, 222, 128, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.setup-panel .setup-button {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #c9a227;
+  color: #000;
+  transition: opacity 0.2s;
+}
+
+.setup-panel .setup-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.setup-panel .setup-button:disabled {
+  background: #666;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.setup-panel .manual-setup {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.setup-panel .manual-setup summary {
+  cursor: pointer;
+  color: #aaa;
+}
+
+.setup-panel .manual-setup pre {
+  background: #0f0f1a;
+  padding: 8px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.65rem;
+  margin-top: 8px;
+  color: #ddd;
+}
+
+.setup-panel .manual-setup code {
+  color: #c9a227;
+}
+
+.setup-panel .setup-status.connected {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.setup-panel .setup-button.remove {
+  background: #444;
+  color: #ccc;
+}
