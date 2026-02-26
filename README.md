@@ -11,10 +11,13 @@ Built with Tauri, React, PixiJS, and vibes.
 The app uses [Claude Code hooks](https://docs.anthropic.com/en/docs/claude-code/hooks) to detect what Claude is doing. When you submit a prompt or Claude finishes a task, a hook fires a quick HTTP request to the app running on `localhost:3456`. The villager reacts accordingly.
 
 ```
-You send a prompt   ──>  Hook fires  ──>  Villager walks to mine and starts mining
-Claude finishes      ──>  Hook fires  ──>  Villager hauls resources back to town
-You press Escape     ──>  Hook fires  ──>  Villager returns home early
-Waiting for input    ──>                   Villager idles at village
+You send a prompt          ──>  Hook fires  ──>  Villager walks to resource site and starts working
+                                                  (if already out, drops off first, then heads back out)
+Claude finishes            ──>  Hook fires  ──>  Villager hauls resources back to town
+Escape during a tool use   ──>  Hook fires  ──>  Villager returns home early
+Escape during planning     ──>               ──>  Villager stays at the site until your next prompt,
+                                                  then drops off and heads to the next site
+Waiting for input          ──>                   Villager idles at village
 ```
 
 ## Setup
@@ -22,8 +25,8 @@ Waiting for input    ──>                   Villager idles at village
 ### 1. Install and run the app
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vibe-coding-villager.git
-cd vibe-coding-villager
+git clone https://github.com/Cp557/vibe-code-villager.git
+cd vibe-code-villager
 npm install
 npm run tauri dev
 ```
@@ -76,11 +79,15 @@ Open (or create) `~/.claude/settings.json` and add the following:
 
 - **`UserPromptSubmit`** — fires when you send a prompt; villager heads to work. If the villager is still out from a previous task, it returns home to drop off first, then heads back out
 - **`Stop`** — fires when Claude finishes normally; villager returns home
-- **`PostToolUseFailure`** — fires when a tool is cancelled by Escape; the app checks `is_interrupt` in the payload and immediately sends the villager home
+- **`PostToolUseFailure`** — fires when a tool is cancelled by Escape; the app checks `is_interrupt` in the payload and sends the villager home. Note: pressing Escape during Claude's planning phase (before any tool runs) doesn't trigger this hook, so the villager stays at the site until you send your next prompt
 
 > If you already have other hooks configured, merge these entries into your existing `hooks` object.
 
-### 3. Use Claude Code as normal
+### 3. Download assets
+
+Get the free [Tiny Swords](https://pixelfrog-assets.itch.io/tiny-swords) pack from itch.io and place the `Tiny Swords (Free Pack)` folder inside `public/`.
+
+### 4. Use Claude Code as normal
 
 Open Claude Code in your terminal and start prompting. The villager will react in real time.
 

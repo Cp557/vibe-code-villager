@@ -32,7 +32,7 @@ export function PawnSprite({
   // Load all animations
   useEffect(() => {
     const loadFrames = async () => {
-      const basePath = `/tiny_swords/Units`;
+      const basePath = `/Tiny Swords (Free Pack)/Units/Blue Units/Pawn`;
       const loadedAnimations: Record<string, Texture[]> = {};
 
       const animationConfigs = [

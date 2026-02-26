@@ -14,7 +14,7 @@ export function TownCenter({ x, y, scale }: TownCenterProps) {
   const [texture, setTexture] = useState<Texture | null>(null);
 
   useEffect(() => {
-    Assets.load("/tiny_swords/Buildings/House2.png").then((loadedTexture) => {
+    Assets.load("/Tiny Swords (Free Pack)/Buildings/Blue Buildings/House2.png").then((loadedTexture) => {
       setTexture(loadedTexture);
     });
   }, []);

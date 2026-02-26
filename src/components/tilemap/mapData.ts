@@ -134,28 +134,28 @@ export interface DecorationConfig {
 export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
   // Bushes (1-4) - Animated, 8 frames horizontal
   1: {
-    path: 'tiny_swords/Terrain/Decorations/Bushes/Bushe1.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe1.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
     frameCount: 8
   },
   2: {
-    path: 'tiny_swords/Terrain/Decorations/Bushes/Bushe2.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe2.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
     frameCount: 8
   },
   3: {
-    path: 'tiny_swords/Terrain/Decorations/Bushes/Bushe3.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe3.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
     frameCount: 8
   },
   4: {
-    path: 'tiny_swords/Terrain/Decorations/Bushes/Bushe4.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe4.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
@@ -164,25 +164,25 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Rocks (5-8) - Static
   5: {
-    path: 'tiny_swords/Terrain/Decorations/Rocks/Rock1.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock1.png',
     animated: false,
     frameWidth: 64,
     frameHeight: 64
   },
   6: {
-    path: 'tiny_swords/Terrain/Decorations/Rocks/Rock2.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock2.png',
     animated: false,
     frameWidth: 64,
     frameHeight: 64
   },
   7: {
-    path: 'tiny_swords/Terrain/Decorations/Rocks/Rock3.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock3.png',
     animated: false,
     frameWidth: 64,
     frameHeight: 64
   },
   8: {
-    path: 'tiny_swords/Terrain/Decorations/Rocks/Rock4.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock4.png',
     animated: false,
     frameWidth: 64,
     frameHeight: 64
@@ -190,28 +190,28 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Trees (9-12) - Animated, 8 frames horizontal
   9: {
-    path: 'tiny_swords/Terrain/Resources/Wood/Trees/Tree1.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree1.png',
     animated: true,
     frameWidth: 192,
     frameHeight: 256,
     frameCount: 8
   },
   10: {
-    path: 'tiny_swords/Terrain/Resources/Wood/Trees/Tree2.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree2.png',
     animated: true,
     frameWidth: 192,
     frameHeight: 256,
     frameCount: 8
   },
   11: {
-    path: 'tiny_swords/Terrain/Resources/Wood/Trees/Tree3.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree3.png',
     animated: true,
     frameWidth: 192,
     frameHeight: 192,
     frameCount: 8
   },
   12: {
-    path: 'tiny_swords/Terrain/Resources/Wood/Trees/Tree4.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree4.png',
     animated: true,
     frameWidth: 192,
     frameHeight: 192,
@@ -220,28 +220,28 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Water Rocks (13-16) - Animated, 16 frames horizontal
   13: {
-    path: 'tiny_swords/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png',
     animated: true,
     frameWidth: 64,
     frameHeight: 64,
     frameCount: 16
   },
   14: {
-    path: 'tiny_swords/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png',
     animated: true,
     frameWidth: 64,
     frameHeight: 64,
     frameCount: 16
   },
   15: {
-    path: 'tiny_swords/Terrain/Decorations/Rocks in the Water/Water Rocks_03.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_03.png',
     animated: true,
     frameWidth: 64,
     frameHeight: 64,
     frameCount: 16
   },
   16: {
-    path: 'tiny_swords/Terrain/Decorations/Rocks in the Water/Water Rocks_04.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_04.png',
     animated: true,
     frameWidth: 64,
     frameHeight: 64,
@@ -250,42 +250,42 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Gold Highlights (17-22) - Animated, 6 frames horizontal
   17: {
-    path: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 1_Highlight.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 1_Highlight.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
     frameCount: 6
   },
   18: {
-    path: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 2_Highlight.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 2_Highlight.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
     frameCount: 6
   },
   19: {
-    path: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 3_Highlight.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 3_Highlight.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
     frameCount: 6
   },
   20: {
-    path: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 4_Highlight.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 4_Highlight.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
     frameCount: 6
   },
   21: {
-    path: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 5_Highlight.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 5_Highlight.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
     frameCount: 6
   },
   22: {
-    path: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 6_Highlight.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 6_Highlight.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
@@ -294,7 +294,7 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Buildings (23) - Static
   23: {
-    path: 'tiny_swords/Buildings/House2.png',
+    path: 'Tiny Swords (Free Pack)/Buildings/House2.png',
     animated: false,
     frameWidth: 128,
     frameHeight: 192,
@@ -303,7 +303,7 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Easter egg (24) - Animated, 3 frames horizontal
   24: {
-    path: 'tiny_swords/Terrain/Decorations/Rubber Duck/Rubber duck.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rubber Duck/Rubber duck.png',
     animated: true,
     frameWidth: 32,
     frameHeight: 32,
@@ -312,7 +312,7 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Sheep (25) - Animated, 6 frames horizontal
   25: {
-    path: 'tiny_swords/Terrain/Resources/Meat/Sheep/Sheep_Grass.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Meat/Sheep/Sheep_Grass.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
@@ -321,7 +321,7 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Sheep flipped (26) - Same as 25 but mirrored around Y axis
   26: {
-    path: 'tiny_swords/Terrain/Resources/Meat/Sheep/Sheep_Grass.png',
+    path: 'Tiny Swords (Free Pack)/Terrain/Resources/Meat/Sheep/Sheep_Grass.png',
     animated: true,
     frameWidth: 128,
     frameHeight: 128,
@@ -334,46 +334,46 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 // Maps decoration layer numbers to their corresponding asset file paths
 export const DECORATION_MAP: Record<number, string> = {
   // Bushes (1-4)
-  1: 'tiny_swords/Terrain/Decorations/Bushes/Bushe1.png',
-  2: 'tiny_swords/Terrain/Decorations/Bushes/Bushe2.png',
-  3: 'tiny_swords/Terrain/Decorations/Bushes/Bushe3.png',
-  4: 'tiny_swords/Terrain/Decorations/Bushes/Bushe4.png',
+  1: 'Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe1.png',
+  2: 'Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe2.png',
+  3: 'Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe3.png',
+  4: 'Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe4.png',
 
   // Rocks (5-8)
-  5: 'tiny_swords/Terrain/Decorations/Rocks/Rock1.png',
-  6: 'tiny_swords/Terrain/Decorations/Rocks/Rock2.png',
-  7: 'tiny_swords/Terrain/Decorations/Rocks/Rock3.png',
-  8: 'tiny_swords/Terrain/Decorations/Rocks/Rock4.png',
+  5: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock1.png',
+  6: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock2.png',
+  7: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock3.png',
+  8: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock4.png',
 
   // Trees (9-12)
-  9: 'tiny_swords/Terrain/Resources/Wood/Trees/Tree1.png',
-  10: 'tiny_swords/Terrain/Resources/Wood/Trees/Tree2.png',
-  11: 'tiny_swords/Terrain/Resources/Wood/Trees/Tree3.png',
-  12: 'tiny_swords/Terrain/Resources/Wood/Trees/Tree4.png',
+  9: 'Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree1.png',
+  10: 'Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree2.png',
+  11: 'Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree3.png',
+  12: 'Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree4.png',
 
   // Water Rocks (13-16)
-  13: 'tiny_swords/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png',
-  14: 'tiny_swords/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png',
-  15: 'tiny_swords/Terrain/Decorations/Rocks in the Water/Water Rocks_03.png',
-  16: 'tiny_swords/Terrain/Decorations/Rocks in the Water/Water Rocks_04.png',
+  13: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png',
+  14: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png',
+  15: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_03.png',
+  16: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rocks in the Water/Water Rocks_04.png',
 
   // Gold Stones (17-22)
-  17: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 1_Highlight.png',
-  18: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 2_Highlight.png',
-  19: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 3_Highlight.png',
-  20: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 4_Highlight.png',
-  21: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 5_Highlight.png',
-  22: 'tiny_swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 6_Highlight.png',
+  17: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 1_Highlight.png',
+  18: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 2_Highlight.png',
+  19: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 3_Highlight.png',
+  20: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 4_Highlight.png',
+  21: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 5_Highlight.png',
+  22: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 6_Highlight.png',
 
   // Buildings (23)
-  23: 'tiny_swords/Buildings/House2.png',
+  23: 'Tiny Swords (Free Pack)/Buildings/House2.png',
 
   // Easter egg (24)
-  24: 'tiny_swords/Terrain/Decorations/Rubber Duck/Rubber duck.png',
+  24: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rubber Duck/Rubber duck.png',
 
   // Sheep (25)
-  25: 'tiny_swords/Terrain/Resources/Meat/Sheep/Sheep_Grass.png',
+  25: 'Tiny Swords (Free Pack)/Terrain/Resources/Meat/Sheep/Sheep_Grass.png',
 
   // Sheep flipped (26)
-  26: 'tiny_swords/Terrain/Resources/Meat/Sheep/Sheep_Grass.png',
+  26: 'Tiny Swords (Free Pack)/Terrain/Resources/Meat/Sheep/Sheep_Grass.png',
 };

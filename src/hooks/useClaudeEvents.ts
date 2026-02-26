@@ -10,7 +10,9 @@ function isTauri(): boolean {
 }
 
 export function useClaudeEvents() {
-  const lastResourceRef = useRef<"gold" | "tree">("tree");
+  // Seed the starting resource from the current hour so it varies each session
+  const startWithGold = new Date().getHours() % 2 === 0;
+  const lastResourceRef = useRef<"gold" | "tree">(startWithGold ? "tree" : "gold");
   const listenerSetUp = useRef(false);
 
   useEffect(() => {

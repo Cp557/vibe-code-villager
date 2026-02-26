@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+CLAUDE.md
+.claude
+public/Tiny Swords (Free Pack)/
+tile_documentation.txt
 
 # Editor directories and files
 .vscode/*

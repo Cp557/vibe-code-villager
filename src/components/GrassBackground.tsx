@@ -19,7 +19,7 @@ export function GrassBackground({ width, height }: GrassBackgroundProps) {
 
   useEffect(() => {
     const loadTile = async () => {
-      const tilemap = await Assets.load("/tiny_swords/Terrain/Tileset/Tilemap_color2.png");
+      const tilemap = await Assets.load("/Tiny Swords (Free Pack)/Terrain/Tileset/Tilemap_color2.png");
 
       // Extract the specific 64x64 tile
       const frame = new Rectangle(

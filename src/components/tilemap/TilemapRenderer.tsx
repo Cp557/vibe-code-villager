@@ -30,7 +30,7 @@ import {
 
 extend({ Container, Sprite, AnimatedSprite, TilingSprite });
 
-const TILESET_PATH = "/tiny_swords/Terrain/Tileset";
+const TILESET_PATH = "/Tiny Swords (Free Pack)/Terrain/Tileset";
 const SHADOW_SIZE = 128;
 
 interface TilemapRendererProps {
