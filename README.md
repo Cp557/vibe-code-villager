@@ -6,7 +6,7 @@ Your villager idles at the town center, grabs a pickaxe and walks to the gold mi
 
 Built with Tauri, React, PixiJS, and vibes.
 
-<video src="public/vibe-code-villager-video.mp4" autoplay loop muted playsinline></video>
+<video src="https://github.com/user-attachments/assets/45ea468b-7f8b-410c-aa39-fb10fd3a995a" autoplay loop muted playsinline></video>
 
 ## How It Works
 
