@@ -6,6 +6,8 @@ Your villager idles at the town center, grabs a pickaxe and walks to the gold mi
 
 Built with Tauri, React, PixiJS, and vibes.
 
+<video src="public/vibe-code-villager-video.mp4" autoplay loop muted playsinline></video>
+
 ## How It Works
 
 The app uses [Claude Code hooks](https://docs.anthropic.com/en/docs/claude-code/hooks) to detect what Claude is doing. When you submit a prompt or Claude finishes a task, a hook fires a quick HTTP request to the app running on `localhost:3456`. The villager reacts accordingly.
@@ -85,7 +87,12 @@ Open (or create) `~/.claude/settings.json` and add the following:
 
 ### 3. Download assets
 
-Get the free [Tiny Swords](https://pixelfrog-assets.itch.io/tiny-swords) pack from itch.io and place the `Tiny Swords (Free Pack)` folder inside `public/`.
+The pixel art sprites are from the [Tiny Swords](https://pixelfrog-assets.itch.io/tiny-swords) asset pack by Pixel Frog. The pack is free but its license doesn't allow redistribution, so it can't be included in this repo — you need to download it yourself.
+
+1. Go to [pixelfrog-assets.itch.io/tiny-swords](https://pixelfrog-assets.itch.io/tiny-swords) and download the free pack
+2. Unzip it and place the `Tiny Swords (Free Pack)` folder inside `public/`
+
+The final path should look like: `public/Tiny Swords (Free Pack)/Units/Blue Units/Pawn/...`
 
 ### 4. Use Claude Code as normal
 
@@ -100,7 +107,7 @@ Open Claude Code in your terminal and start prompting. The villager will react i
 
 ## Sprite Assets
 
-All pixel art is from the [Tiny Swords](https://pixelfrog-assets.itch.io/tiny-swords) asset pack by Pixel Frog.
+All pixel art is from the [Tiny Swords](https://pixelfrog-assets.itch.io/tiny-swords) asset pack by Pixel Frog. The pack is free to use but not redistributable, which is why it's gitignored and must be downloaded separately (see Setup above).
 
 ## License
 

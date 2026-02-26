@@ -294,7 +294,7 @@ export const DECORATION_CONFIG: Record<number, DecorationConfig> = {
 
   // Buildings (23) - Static
   23: {
-    path: 'Tiny Swords (Free Pack)/Buildings/House2.png',
+    path: 'Tiny Swords (Free Pack)/Buildings/Blue Buildings/House2.png',
     animated: false,
     frameWidth: 128,
     frameHeight: 192,
@@ -366,7 +366,7 @@ export const DECORATION_MAP: Record<number, string> = {
   22: 'Tiny Swords (Free Pack)/Terrain/Resources/Gold/Gold Stones/Gold Stone 6_Highlight.png',
 
   // Buildings (23)
-  23: 'Tiny Swords (Free Pack)/Buildings/House2.png',
+  23: 'Tiny Swords (Free Pack)/Buildings/Blue Buildings/House2.png',
 
   // Easter egg (24)
   24: 'Tiny Swords (Free Pack)/Terrain/Decorations/Rubber Duck/Rubber duck.png',

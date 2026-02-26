@@ -310,17 +310,14 @@ export const useVillagerStore = create<VillagerStore>()((set, get) => ({
 
     // Determine facing direction
     let newFacing: FacingDirection;
-    if (dx !== 0) {
+    if (state === "returning_gold" && currentMine === "mine22") {
+      // Always face left when returning from mine22 (path goes right then down then left)
+      newFacing = "left";
+    } else if (dx !== 0) {
       // Horizontal movement
       newFacing = dx < 0 ? "left" : "right";
     } else {
-      // Vertical movement - check if returning from mine22
-      const { currentMine } = get();
-      if (state === "returning_gold" && currentMine === "mine22") {
-        newFacing = "left";
-      } else {
-        newFacing = get().facingDirection; // Keep current facing
-      }
+      newFacing = get().facingDirection; // Keep current facing
     }
 
     set({
