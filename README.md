@@ -1,6 +1,6 @@
-# Vibe Coding Villager
+# Vibe Code Villager
 
-A tiny desktop companion that watches your [Claude Code](https://claude.ai/code) session and brings it to life with Age of Empires 2-style pixel art.
+A tiny desktop companion that watches your [Claude Code](https://claude.ai/code) session and brings it to life with pixel art.
 
 Your villager idles at the town center, grabs a pickaxe and walks to the gold mine when you send a prompt, mines while Claude works, and hauls gold back home when the task finishes. It alternates between gold mining and wood chopping for variety.
 
